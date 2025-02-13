@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bursary Application - Masinga NG-CDF</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Bursary Application</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="achievements.html">Achievements</a></li>
+                <li><a href="management.html">Management</a></li>
+                <li><a href="allocations.html">Allocations</a></li>
+                <li><a href="committee.html">Committee</a></li>
+                <li><a href="downloads.html">Downloads</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+                <li><a href="bursary-application.html">Bursary Application</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Bursary Application Form</h2>
+        <form id="bursaryForm">
+            <!-- Personal Details -->
+            <fieldset>
+                <legend>Personal Details</legend>
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" required>
+
+                <label for="middleName">Middle Name:</label>
+                <input type="text" id="middleName">
+
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" required>
+
+                <label for="gender">Gender:</label>
+                <select id="gender" required>
+                    <option value="">Select Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+
+                <label>
+                    <input type="checkbox" id="disability"> Disability
+                </label>
+
+                <label for="nationalId">National ID/Birth Certificate No:</label>
+                <input type="text" id="nationalId" required>
+
+                <label for="idUpload">Upload National ID/Birth Certificate (Front & Back):</label>
+                <input type="file" id="idUpload" accept="image/png, image/jpeg" multiple required>
+
+                <label for="phoneNumber">Phone Number:</label>
+                <input type="text" id="phoneNumber" required>
+
+                <label for="guardianPhone">Guardian's Phone Number:</label>
+                <input type="text" id="guardianPhone" required>
+
+                <label for="guardianId">Guardian's ID:</label>
+                <input type="text" id="guardianId" required>
+            </fieldset>
+
+            <!-- Residence Details -->
+            <fieldset>
+                <legend>Residence Details</legend>
+                <label for="ward">Ward:</label>
+                <select id="ward" required>
+                    <option value="">Select Ward</option>
+                    <option value="Kivaa">Kivaa</option>
+                    <option value="Masinga Central">Masinga Central</option>
+                    <option value="Ekalakala">Ekalakala</option>
+                    <option value="Ndithini">Ndithini</option>
+                    <option value="Muthesya">Muthesya</option>
+                </select>
+
+                <label for="location">Location:</label>
+                <input type="text" id="location" required>
+
+                <label for="subLocation">Sub-location:</label>
+                <input type="text" id="subLocation" required>
+
+                <label for="village">Village:</label>
+                <input type="text" id="village" required>
+
+                <label for="chiefName">Chief's Name:</label>
+                <input type="text" id="chiefName" required>
+
+                <label for="chiefPhone">Chief's Phone Number:</label>
+                <input type="text" id="chiefPhone" required>
+
+                <label for="asstChiefName">Assistant Chief's Name:</label>
+                <input type="text" id="asstChiefName" required>
+
+                <label for="asstChiefPhone">Assistant Chief's Phone Number:</label>
+                <input type="text" id="asstChiefPhone" required>
+            </fieldset>
+
+            <!-- Institution Details -->
+            <fieldset>
+                <legend>Institution Details</legend>
+                <label for="institutionType">Institution Type:</label>
+                <select id="institutionType" required>
+                    <option value="">Select Institution Type</option>
+                    <option value="College">College</option>
+                    <option value="University">University</option>
+                </select>
+
+                <label for="institutionName">Institution Name:</label>
+                <input type="text" id="institutionName" required>
+
+                <label for="amountApplied">Amount Applied For:</label>
+                <input type="number" id="amountApplied" required>
+
+                <label for="admissionNo">Admission/Reg No:</label>
+                <input type="text" id="admissionNo" required>
+
+                <label for="levelOfStudy">Level of Study:</label>
+                <select id="levelOfStudy" required>
+                    <option value="">Select Level of Study</option>
+                    <option value="Degree">Degree</option>
+                    <option value="Diploma">Diploma</option>
+                    <option value="Certificate">Certificate</option>
+                </select>
+
+                <label for="modeOfStudy">Mode of Study:</label>
+                <select id="modeOfStudy" required>
+                    <option value="">Select Mode of Study</option>
+                    <option value="Full-time">Full-time</option>
+                    <option value="Part-time">Part-time</option>
+                </select>
+            </fieldset>
+
+            <!-- Family Details -->
+            <fieldset>
+                <legend>Family Details</legend>
+                <label for="parentalStatus">Parental Status:</label>
+                <select id="parentalStatus" required>
+                    <option value="">Select Parental Status</option>
+                    <option value="Both Parents Alive">Both Parents Alive</option>
+                    <option value="Single Parent">Single Parent</option>
+                    <option value="Partial Orphan">Partial Orphan</option>
+                    <option value="Total Orphan">Total Orphan</option>
+                </select>
+
+                <div id="deathCertificateUpload" style="display: none;">
+                    <label for="deathCertificate">Upload Death Certificate:</label>
+                    <input type="file" id="deathCertificate" accept="image/png, image/jpeg">
+                </div>
+            </fieldset>
+
+            <button type="submit">Submit Application</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Masinga NG-CDF. All Rights Reserved.</p>
+    </footer>
+
+    <script src="assets/js/scripts.js"></script>
+</body>
+</html>
